@@ -13,3 +13,6 @@ Schemas have been loaded using the python dataframe libary Polars (https://www.p
 The Saas/B2B fictitious data set is aviable as a playground to test and learn exploratory data analysis (EDA), in the future I'd like to add Malloy (https://www.malloydata.dev/) and/or Ibis (https://ibis-project.org/) notebooks.
 
 Virtual Environment: #!python -m venv venv #!source venv/bin/activate #! pip install -r requirements.txt
+
+Duckdb to Parquet
+COPY (SELECT * FROM tbl) TO 'output.parquet' (FORMAT PARQUET);
