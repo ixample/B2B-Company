@@ -16,3 +16,6 @@ Virtual Environment: #!python -m venv venv #!source venv/bin/activate #! pip ins
 
 Duckdb to Parquet
 COPY (SELECT * FROM tbl) TO 'output.parquet' (FORMAT PARQUET);
+
+lock ref 'HEAD': is at d20a56c53578c0cd295f60ac977fa75f4153b5a8 but expected e74675f0a48a9d19b95d38fb41467eabd7e9d67d
+git reset --hard HEAD 
